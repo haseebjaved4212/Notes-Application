@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "remixicon/fonts/remixicon.css";
+
 
 const App = () => {
   const [title, setTitle] = useState("");
@@ -80,13 +82,13 @@ const App = () => {
                     {elem.details}
                   </p>
                 </div>
-                <button
+                <button title="Delete Note "
                   onClick={() => {
                     deleteNote(idx);
                   }}
-                  className="w-full cursor-pointer active:scale-95 bg-red-500 py-1 text-xs rounded font-bold text-white"
+                  className="w-full  cursor-pointer active:scale-95 bg-red-500 py-1 text-1xl rounded font-bold text-white"
                 >
-                  Delete
+                  <i class="ri-delete-bin-2-fill"></i>
                 </button>
               </div>
             );
